@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Update Student Data</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+    }
+    .form-container {
+      width: 400px;
+      margin: 80px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #007bff;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Update Student Data</h2>
+  <form action="studentupdate.jsp" method="post">
+    <input type="number" name="studnumber" placeholder="Enter Student Number" required>
+
+    <input type="text" name="studname" placeholder="Enter Student Name" required>
+
+    <label for="coursename">Select New Course</label>
+    <select name="coursename" required>
+      <option value="">--Select--</option>
+      <option value="B.Tech">B.Tech</option>
+      <option value="MCA">MCA</option>
+      <option value="BCA">BCA</option>
+      <option value="BBA">BBA</option>
+    </select>
+
+    <button type="submit">Update Student</button>
+  </form>
+</div>
+
+</body>
+</html>

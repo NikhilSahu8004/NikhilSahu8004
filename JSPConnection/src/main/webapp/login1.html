@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - MySite</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+    }
+
+    .login-container {
+      width: 360px;
+      margin: 80px auto;
+      padding: 40px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-container h2 {
+      text-align: center;
+      color: #1877f2;
+      margin-bottom: 30px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-button {
+      width: 100%;
+      padding: 10px;
+      background-color: #1877f2;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .login-button:hover {
+      background-color: #145ecb;
+    }
+
+    .bottom-text {
+      text-align: center;
+      margin-top: 20px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .bottom-text a {
+      color: #1877f2;
+      text-decoration: none;
+    }
+
+    .bottom-text a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="databaseconnection2.jsp" method="post" autocomplete="off">
+      <div class="input-group">
+        <label for="user">Username</label>
+        <input type="text" id="user" name="user" required>
+      </div>
+      <div class="input-group">
+        <label for="pwd">Password</label>
+        <input type="password" id="pwd" name="pwd" required>
+      </div>
+      <button type="submit" class="login-button">Log In</button>
+    </form>
+    <div class="bottom-text">
+      Forgot your password? <a href="forgetuser.html">Click here</a><br>
+      Don't have an account? <a href="createuser.html">Sign up</a>
+    </div>
+  </div>
+</body>
+</html>
